@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by DinaCode (http://jsbin.com/cuhuvab/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Mondrian painting szabad alkotás">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#vaszon {
+  width: 600px;
+  height: 500px;
+  background-color: ivory;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px 13px  gray;
+}
+
+#first-row {
+  height: 75%;
+  width: 100%;
+  background-color: brown; /*csak a formazasnal segített, most már nincs jelentősége*/
+
+}
+
+#big-rectangle {
+  height: 100%;
+  width: 75%;
+}
+
+#first-divider {
+  height: 100%;
+  width: 3%;
+}
+
+#first-column {
+  height: 100%;
+  width: 22%;
+  background-color:ivory
+  }
+#second-divider {
+  height: 3%;
+  width: 100%;
+}
+
+#first-medium-rectangle {
+  height: 48.5%;
+  width: 100%;
+}
+#second-medium-rectangle {
+  height: 48.5%;
+  width: 100%;
+    background-color:lightcoral;
+}
+
+#second-row {
+  height: 3%;
+  width: 100%;
+}
+
+#third-row {
+  height: 22%;
+  width: 100%;
+}
+
+
+#last-column {
+  height: 100%;
+  width: 5%;       //3. oszlop szélességhez
+}
+#third-divider {
+  height: 22%;
+  width: 100%;
+}
+
+#first-little-rectangle {
+  height: 39%;
+  width: 100%;
+}
+
+#second-little-rectangle {
+  height: 39%;
+  width: 100%;
+  background-color:mistyrose
+}
+
+#last-divider {
+  height: 100%;
+  width: 3%;    // 3. oszlop szélességhez 2x
+}
+#last-row-rectangle{
+  height: 100%;
+  width: 67%;    //3. oszlop szélességhez
+}
+#medium-rectangle{
+  height: 100%;
+  width: 22%;
+  background-color: turquoise;
+}
+
+.red {
+  background-color: yellowgreen;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.right {
+  float: right;
+}
+
+.black {
+  background-color: grey;
+}
+.ivory {
+  background-color: ivory;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <div id="vaszon">  
+    
+    <div id="first-row" class="brown">  
+       <div id="big-rectangle" class="red right"> </div>
+       <div id="first-divider" class="black right"></div>
+       <div id="first-column" class="right">
+          <div id="first-medium-rectangle"></div>
+          <div id="second-divider" class="black"></div>
+          <div id="second-medium-rectangle"></div>
+       </div>
+     </div>
+    
+   <div id="second-row" class="black"></div>
+    
+   <div id="third-row" class="brown">
+       <div id="last-column" class="ivory right">
+          <div id="first-little-rectangle"></div>
+          <div id="third-divider" class="black"></div>
+          <div id="second-little-rectangle"></div>
+       </div>
+     <div id="last-divider" class="black right">   </div>
+     <div id="last-row-rectangle" class="ivory right">  </div>
+     <div id="last-divider" class="black right">   </div>
+     <div id="medium-rectangle" >  </div>
+
+  </div>
+</body>
+</html>
